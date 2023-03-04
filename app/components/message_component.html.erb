@@ -1,0 +1,6 @@
+<div id="<%= dom_id(@message) %>" class="border-4 border-blue p-4 m-1">
+  <p><%= @message.data %></p>
+  <p><%= link_to("@#{@message.user.name}", @message.user) %></p>
+  <p><%= l @message.created_at, :format => :short %></p>
+</div>
+
